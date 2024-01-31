@@ -17,8 +17,7 @@ const Fractal = class {
       if (z.x * z.x + z.y * z.y > 4) break 
     }
     return {
-      zx,
-      zy,
+      value: z.x * z.x + z.y * z.y,
       iterations,
       diverged: z.x * z.x + z.y * z.y < 4,
     }
